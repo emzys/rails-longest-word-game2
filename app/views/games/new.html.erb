@@ -1,2 +1,11 @@
-<h1>Games#new</h1>
-<p>Find me in app/views/games/new.html.erb</p>
+<div class="container">
+  <h1>New game</h1>
+
+  <ul class="letters">
+    <% @letters.each do |letter| %>
+      <li><%= letter %></li>
+    <% end %>
+  </ul>
+
+  <p class="form-prefix">What is the longest word you can find?</p>
+</div>
